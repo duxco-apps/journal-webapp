@@ -1,0 +1,23 @@
+{
+  "name": "journal-webapp",
+  "version": "1.0.0",
+  "description": "Duxco Journal web application",
+  "main": "main.4ef7bd8dd6d320eb.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duxco-apps/journal-webapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duxco-apps/journal-webapp/issues"
+  },
+  "homepage": "https://github.com/duxco-apps/journal-webapp#readme",
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}

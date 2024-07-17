@@ -4,7 +4,10 @@
   "description": "Duxco Journal web application",
   "main": "main.4ef7bd8dd6d320eb.js",
   "scripts": {
-    "deploy": "gh-pages -d build"
+    "build": "cd ~/Projects/Duxco/apps && npx nx build-gh-pages journal-web --skip-nx-cache",
+    "clear": "cd build && rm -rf *",
+    "copy": "cp -r ~/Projects/Duxco/apps/dist/apps/journal/frontend/web/* build",
+    "deploy": "npm run build && npm run clear && npm run copy && gh-pages -d build"
   },
   "repository": {
     "type": "git",

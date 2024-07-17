@@ -5,10 +5,10 @@
   "main": "main.4ef7bd8dd6d320eb.js",
   "scripts": {
     "build": "cd ~/Projects/Duxco/apps && npx nx build-gh-pages journal-web --skip-nx-cache",
-    "clear": "cd docs && rm -rf *",
+    "clean": "cd docs && rm -rf * && cp ../CNAME .",
     "copy": "cp -r ~/Projects/Duxco/apps/dist/apps/journal/frontend/web/* docs",
-    "deploy": "npm run build && npm run clear && npm run copy && git add . && git amend && git push --force",
-    "__deploy": "npm run build && npm run clear && npm run copy && gh-pages -d build"
+    "deploy": "npm run build && npm run clean && npm run copy && git add . && git amend && git push --force",
+    "__deploy": "npm run build && npm run clean && npm run copy && gh-pages -d build"
   },
   "repository": {
     "type": "git",
